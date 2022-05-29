@@ -15,7 +15,7 @@
   "author": "gines gazquez",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",go
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.3.4",
