@@ -21,7 +21,7 @@ const personSchema = new mongoose.Schema({
     number: {
         type: String,
         validate: {
-            validator: v =>  /^(?=.{9,}$)\d{2,3}-\d+/.test(v),  //regex expression also counts length
+            validator: v =>  /^(?=.{9,}$)\d{2,3}-\d+$/.test(v),  //regex expression also counts length
         }
     }
 })
