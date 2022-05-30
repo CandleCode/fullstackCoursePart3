@@ -10,7 +10,8 @@
     "build:ui": "rm -rf build && cd ../phonebookFrontend && npm run build && cp -r build ../fullstackCoursePart3",
     "deploy": "git push heroku-fullstackopenpart3 main",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy",
-    "logs:prod": "heroku logs --tail"
+    "logs:prod": "heroku logs --tail",
+    "lint": "eslint ."
   },
   "author": "gines gazquez",
   "license": "ISC",
@@ -22,6 +23,12 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "nodemon": "^2.0.16"
   }
 }
